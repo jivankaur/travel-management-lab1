@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Travellers" max_length="40" name="x_134142_unicorn_travellers" type="collection">
+        <element label="Contact number" max_length="40" name="contact_num" type="phone_number_e164"/>
+        <element choice="3" default="female" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element label="Male" sequence="0" value="male"/>
+                <element label="Female" sequence="1" value="female"/>
+            </choice>
+        </element>
+        <element display="true" label="Traveller" max_length="32" name="traveller" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="traveller"/>
+        </index>
+    </element>
+</database>

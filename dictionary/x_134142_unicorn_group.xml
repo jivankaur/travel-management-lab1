@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Travel Groups" max_length="40" name="x_134142_unicorn_group" type="collection">
+        <element label="Members" max_length="4000" name="members" reference="x_134142_unicorn_travellers" type="glide_list"/>
+        <element label="Group Name" max_length="50" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Group ID" max_length="40" name="number" type="string"/>
+        <element label="Primary Contact" max_length="32" name="primary_contact" reference="x_134142_unicorn_travellers" type="reference"/>
+        <element label="Solo Travellers Only" max_length="40" name="solo_travellers" type="boolean"/>
+        <index name="index">
+            <element name="primary_contact"/>
+        </index>
+    </element>
+</database>

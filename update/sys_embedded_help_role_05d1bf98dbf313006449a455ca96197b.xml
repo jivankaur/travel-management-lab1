@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_134142_unicorn.agency_admin" name="x_134142_unicorn.agency_admin">af813f98dbf313006449a455ca961916</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-04 20:35:30</sys_created_on>
+        <sys_id>05d1bf98dbf313006449a455ca96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>af813f98dbf313006449a455ca961916</sys_name>
+        <sys_package display_value="Unicorn" source="x_134142_unicorn">c5a42b50dbf313006449a455ca9619fd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Unicorn">c5a42b50dbf313006449a455ca9619fd</sys_scope>
+        <sys_update_name>sys_embedded_help_role_05d1bf98dbf313006449a455ca96197b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-04 20:35:30</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

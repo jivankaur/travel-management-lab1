@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Trip" max_length="40" name="x_134142_unicorn_trip" type="collection">
+        <element label="Destination" max_length="30" name="destination" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Trip ID" max_length="40" name="number" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Pending Approval" sequence="0" value="pending"/>
+                <element label="Approved" sequence="1" value="approved"/>
+                <element label="Confirmed" sequence="2" value="confirmed"/>
+                <element label="Scheduled" sequence="3" value="scheduled"/>
+                <element label="In Progress" sequence="4" value="in_progress"/>
+                <element label="Complete" sequence="5" value="complete"/>
+                <element label="Cancelled" sequence="6" value="cancelled"/>
+            </choice>
+        </element>
+        <element label="Group" max_length="32" name="trip_group" reference="x_134142_unicorn_group" type="reference"/>
+        <element label="Vendor" max_length="32" name="trip_vendor" reference="x_134142_unicorn_vendors" type="reference"/>
+        <index name="index">
+            <element name="trip_group"/>
+        </index>
+        <index name="index2">
+            <element name="trip_vendor"/>
+        </index>
+    </element>
+</database>
