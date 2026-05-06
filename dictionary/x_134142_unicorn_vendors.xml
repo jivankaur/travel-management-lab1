@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element label="Vendors" max_length="40" name="x_134142_unicorn_vendors" type="collection">
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Vendor ID" max_length="40" name="number" type="string"/>
-        <element label="City" max_length="50" name="vendor_city" type="string"/>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="18b426e73ba4c790899fafd643e45a0c" label="Vendors" max_length="40" name="x_134142_unicorn_vendors" type="collection">
         <element display="true" label="Name" max_length="100" name="vendor_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Vendor ID" max_length="40" name="number" type="string"/>
+        <element label="Risk level" max_length="40" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element label="City" max_length="50" name="vendor_city" type="string"/>
+        <element label="Vendor alias" max_length="40" name="vendor_alias" type="string"/>
     </element>
 </database>
