@@ -32,6 +32,9 @@
 	current.status = 'pending';
 	gs.addInfoMessage(current.trip_vendor.vendor_city); 
 	//new comment
+	//Fallons change up
+
+	//add an alert to greet customer each day
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -39,15 +42,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01ee1620dbfb13006449a455ca961969</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>update trip type</sys_name>
         <sys_overrides/>
         <sys_package display_value="Unicorn" source="x_134142_unicorn">c5a42b50dbf313006449a455ca9619fd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Unicorn">c5a42b50dbf313006449a455ca9619fd</sys_scope>
         <sys_update_name>sys_script_01ee1620dbfb13006449a455ca961969</sys_update_name>
-        <sys_updated_by>jivanjot.kaur@snc</sys_updated_by>
-        <sys_updated_on>2026-04-21 22:05:23</sys_updated_on>
+        <sys_updated_by>brook.shuford</sys_updated_by>
+        <sys_updated_on>2026-05-06 23:42:13</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
