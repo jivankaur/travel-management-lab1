@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element label="Trip" max_length="40" name="x_134142_unicorn_trip" type="collection">
-        <element label="Destination" max_length="30" name="destination" type="string"/>
-        <element label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Trip ID" max_length="40" name="number" type="string"/>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="48b4e2e73ba4c790899fafd643e45a85" label="Trip" max_length="40" name="x_134142_unicorn_trip" type="collection">
         <element label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element label="Destination" max_length="30" name="destination" type="string"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice>
-                <element label="Pending Approval" sequence="0" value="pending"/>
-                <element label="Approved" sequence="1" value="approved"/>
-                <element label="Confirmed" sequence="2" value="confirmed"/>
-                <element label="Scheduled" sequence="3" value="scheduled"/>
-                <element label="In Progress" sequence="4" value="in_progress"/>
-                <element label="Complete" sequence="5" value="complete"/>
-                <element label="Cancelled" sequence="6" value="cancelled"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="6" value="cancelled"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="In Progress" sequence="4" value="in_progress"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="3" value="scheduled"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
+                <element inactive_on_update="false" label="Complete" sequence="5" value="complete"/>
             </choice>
         </element>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element default="Max" label="Test User" max_length="100" name="test_user" type="string"/>
         <element label="Group" max_length="32" name="trip_group" reference="x_134142_unicorn_group" type="reference"/>
         <element label="Vendor" max_length="32" name="trip_vendor" reference="x_134142_unicorn_vendors" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Trip ID" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="trip_group"/>
         </index>
